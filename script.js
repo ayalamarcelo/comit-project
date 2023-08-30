@@ -1,34 +1,65 @@
-const loadPokeApi = async (pokemonId) => {
+const pokeapi = async (pokemonId) => {
   try {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
-    const data = await response.json();
+    const response = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
+    )
+    const data = await response.json()
     return data;
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
-};
+}
 
-const pokemon = ["149", "149", "141", "141", "142", "142", "143", "143", "144", "144", "145", "145", "146", "146", "147", "147"];
+const pokemon = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8"];
 
 let shuf_pokemon = pokemon.sort(() => Math.random() - 0.5);
 
+let flippedCards = [];
+let matchedPairs = 0;
+
 async function createPokemonBox(pokemonId) {
-  const data = await loadPokeApi(pokemonId);
-  const box = document.createElement('div');
-  box.className = 'item';
-  const img = document.createElement('img');
+  const data = await pokeapi(pokemonId);
+  const box = document.createElement("div");
+  box.className = "item";
+  box.dataset.id = pokemonId;
+  const img = document.createElement("img");
   img.src = data.sprites.front_default;
   img.alt = data.name;
   box.appendChild(img);
 
   box.onclick = function () {
-    this.classList.add('boxOpen');
-    setTimeout(() => {
-      this.classList.remove('boxOpen');
-    }, 1500);
+    if (
+      flippedCards.length < 2 &&
+      !flippedCards.includes(this) &&
+      !this.classList.contains("boxOpen")
+    ) {
+      this.classList.add("boxOpen");
+      flippedCards.push(this);
+
+      if (flippedCards.length === 2) {
+        const card1 = flippedCards[0].getAttribute("data-id");
+        const card2 = flippedCards[1].getAttribute("data-id");
+
+        if (card1 === card2) {
+          flippedCards = [];
+          matchedPairs++;
+
+          if (matchedPairs === shuf_pokemon.length / 2) {
+            setTimeout(() => {
+              alert("");
+            }, 500);
+          }
+        } else {
+          setTimeout(() => {
+            flippedCards.forEach((card) => card.classList.remove("boxOpen"));
+            flippedCards = [];
+          }, 1000);
+        }
+      }
+    }
   };
 
-  document.querySelector('.game').appendChild(box);
+  document.querySelector(".game").appendChild(box);
 }
 
 async function createGame() {
@@ -38,5 +69,3 @@ async function createGame() {
 }
 
 createGame();
-
-

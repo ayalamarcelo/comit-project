@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'ADLaM Display', cursive;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1f2421;
+  background: #6563ff;
 }
 
 .container {
@@ -21,36 +21,41 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   gap: 30px;
-  background: #216869;
+  background: #fff;
   padding: 40px 60px;
 }
 
 h2 {
-  font-size: 1.0em;
-  color: #fff;
+  font-size: 1.4em;
+  color: #6563ff;
   text-transform: uppercase;
-  letter-spacing: 0.01em;
-  font-weight: 200;
+  letter-spacing: 0.04em;
+  font-weight: 500;
 }
 
 .reset {
   display: flex;
   padding: 15px 20px;
   color: #fff;
-  background: #49a078;
+  background: #6563ff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
   border: none;
-  font-size: .8em;
+  font-size: 1.0em;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 500;
   transition: background 0.3s, color 0.3s;
 }
 
 .reset:hover {
   background: #fff;
-  color: #49a078;
+  color: #6563ff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 .game {
@@ -71,6 +76,8 @@ h2 {
   justify-content: center;
   align-items: center;
   background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
   font-size: 3em;
   transition: 0.25s;
   transform-style: preserve-3d;
@@ -85,7 +92,9 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: #49a078;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
