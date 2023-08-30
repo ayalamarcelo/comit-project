@@ -1,20 +1,20 @@
-const express = require('express');
+const express = require('express')
+const app = express()
+const appJS = require('./app.js')
 
-const path = require('path');
-
-const cors = require('cors');
-const app = express();
+app.use(express.static('public'));
 
 
-const controllers = require('./server/controllers/controllers')
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html')
+})
 
-//middlewares
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/public/style.css')
+})
 
-app.use(express.static(path.join(__dirname, './public')));
-app.use(cors());
 
-app.get('/', controllers.goContact);
-app.get('/nosotros', (req, res) => {
-    const filePath = path.join(__dirname, './public/script.html')
-    res.sendFile(filePath);
-});
+const PORT = 8000
+app.listen(PORT, () => {
+  console.log(`Servidor en funcionamiento en el puerto ${PORT}`)
+})

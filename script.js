@@ -1,14 +1,4 @@
-const pokeapi = async (pokemonId) => {
-  try {
-    const response = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
-    )
-    const data = await response.json()
-    return data;
-  } catch (err) {
-    console.log(err);
-  }
-}
+const pokemonData = require('./pokemonData.json');
 
 const pokemon = ["1","1","2","2","3","3","4","4","5","5","6","6","7","7","8","8"];
 
@@ -18,7 +8,7 @@ let flippedCards = [];
 let matchedPairs = 0;
 
 async function createPokemonBox(pokemonId) {
-  const data = await pokeapi(pokemonId);
+  const data = pokemonData[pokemonId - 1];
   const box = document.createElement("div");
   box.className = "item";
   box.dataset.id = pokemonId;
