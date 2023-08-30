@@ -54,12 +54,5 @@
     "sprites": {
       "front_default": "https://raw.githubuserco…er/sprites/pokemon/8.png"
     }
-  },
-  {
-    "id": 9,
-    "name": "Blastoise",
-    "sprites": {
-      "front_default": "https://raw.githubuserco…er/sprites/pokemon/9.png"
-    }
   }
 ]
