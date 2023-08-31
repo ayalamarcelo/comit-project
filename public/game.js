@@ -1,6 +1,6 @@
 const pokemonData = {}; 
 
-fetch('/pokeData')
+fetch('localhost:8000/pokeData')
   .then(response => response.json())
   .then(data => {
     data.forEach(pokemon => {
