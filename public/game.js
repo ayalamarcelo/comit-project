@@ -1,10 +1,10 @@
-const pokemonData = {}; 
+const pokemonAPI = {}; 
 
-fetch('localhost:8000/pokeData')
+fetch('http:localhost:8000/pokeAPI')
   .then(response => response.json())
   .then(data => {
     data.forEach(pokemon => {
-      pokemonData[pokemon.id] = pokemon;
+      pokemonAPI[pokemon.id] = pokemon;
     });
 
     
@@ -15,7 +15,9 @@ fetch('localhost:8000/pokeData')
     let matchedPairs = 0;
 
     function createPokemonBox(pokemonId) {
-      const data = pokemonData[pokemonId - 1];
+      console.log(pokemonAPI)
+      
+      const data = pokemonAPI[pokemonId];
       const box = document.createElement("div");
       box.className = "item";
       box.dataset.id = pokemonId;
