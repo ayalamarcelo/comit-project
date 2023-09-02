@@ -1,8 +1,10 @@
 # Pokeflip!
+***
 
 Pokeflip! is a memo game about pokemon, made with JavaScript.
 
 ## Installation
+***
 
 Use the package manager.
 
