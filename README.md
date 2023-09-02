@@ -1,11 +1,7 @@
 # Pokeflip!
-***
-
 Pokeflip! is a memo game about pokemon, made with JavaScript.
 
 ## Installation
-***
-
 Use the package manager.
 
 ```bash
@@ -31,5 +27,4 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-***
-Enjoy!
+## Enjoy!
