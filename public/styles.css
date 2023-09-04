@@ -68,6 +68,17 @@ h2 {
   perspective: 800px;
 }
 
+.generators {
+  display: flex;
+  color: #6563ff;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .item {
   position: relative;
   width: 100px;
