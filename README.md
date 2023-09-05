@@ -1,5 +1,5 @@
 ## Pokeflip!
-`Pokeflip!` is a memory game made with javascript to present as a final project in ComIT's node.js course.
+Is a memory game made with javascript to present as a final project in ComIT's node.js course.
 
 ### Installation
 Use the package manager.

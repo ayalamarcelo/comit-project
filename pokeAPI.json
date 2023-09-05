@@ -54,5 +54,12 @@
     "sprites": {
       "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
     }
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    }
   }
 ]

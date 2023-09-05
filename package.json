@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon webServer.js"
+    "start": "node webServer.js"
   },
   "keywords": [],
   "author": "Marcelo Ayala",
@@ -13,7 +13,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
-  "description": "Pokeflip! is a memo game about pokemon made with JavaScript.",
+  "description": "Memory game made with javascript to present as a final project in ComIT's node.js course.",
   "directories": {
     "test": "tests"
   }
