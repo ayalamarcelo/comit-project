@@ -110,7 +110,7 @@ fetch("/pokeAPI")
               if (matchedPairs === shuffledPokemonIds.length / 2) {
                 // Si se completan todos los pares, muestra un mensaje de victoria y detiene el temporizador
                 setTimeout(() => {
-                  let user = prompt("¡Has ganado! Escribe tu nombre");
+                  let user = prompt("Score Ranking");
                   stopTimer();
                 }, 500);
               }
