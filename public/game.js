@@ -1,6 +1,6 @@
 const pokemonAPI = {};
 
-fetch("http:localhost:8000/pokeAPI")
+fetch("/pokeAPI")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((pokemon) => {
@@ -110,7 +110,7 @@ fetch("http:localhost:8000/pokeAPI")
               if (matchedPairs === shuffledPokemonIds.length / 2) {
                 // Si se completan todos los pares, muestra un mensaje de victoria y detiene el temporizador
                 setTimeout(() => {
-                  alert("¡Has ganado!");
+                  let user = prompt("¡Has ganado! Escribe tu nombre");
                   stopTimer();
                 }, 500);
               }
