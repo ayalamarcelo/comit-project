@@ -19,6 +19,7 @@ app.get('/pokeAPI', (req, res) => {
 });
 
 app.get('/', navController.goIndex);
+app.post('/', winController.create);
 
 // PORT 8000
 app.listen(PORT, () => {

@@ -1,1 +1,12 @@
+###
 GET localhost:8000/
+
+###
+POST http://localhost:8000/
+content-type: application/json
+
+{
+    "time": "",
+    "moves": "",
+    "name": ""
+}
