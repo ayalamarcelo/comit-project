@@ -21,6 +21,7 @@ fetch("/pokeAPI")
     // Variables para el temporizador y movimientos
     let seconds = 0;
     let minutes = 0;
+    let finalTime = '';
     let movesCount = 0;
     let timerInterval;
 
@@ -55,6 +56,7 @@ fetch("/pokeAPI")
       document.getElementById(
         "time"
       ).innerHTML = `<span>Time: ${minutesValue}:${secondsValue}</span>`;
+      finalTime = `${minutesValue}:${secondsValue}`
     }
 
     // Función para actualizar el contador de movimientos
@@ -111,6 +113,20 @@ fetch("/pokeAPI")
                 // Si se completan todos los pares, muestra un mensaje de victoria y detiene el temporizador
                 setTimeout(() => {
                   let user = prompt("Score Ranking");
+                  let time = finalTime;
+                  let moves = movesCount;
+                  fetch('/api/winner', {
+                    method: 'POST',
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({user, moves, time})
+                  })
+                  .then((response) => response.json())
+                  .then((data) => console.log(data))
+                  .catch((error) => {
+                    console.log("Error:", error)
+                  });
                   stopTimer();
                 }, 500);
               }
