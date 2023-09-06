@@ -2,10 +2,10 @@ const { connectDB, disconnectDB } = require("../db/connection");
 const winnerUSer = require("../db/schemas/winnerSchema");
 
 const create = async (req, res) => {
-    const { time, moves, name } = req.body;
+    const { time, moves, user } = req.body;
     await connectDB();
     
-    const newUSer = new WinUser.winnerUser({ time, moves, name });
+    const newUSer = new winnerUSer({ time, moves, user });
     
     const WinUser = await newUSer.save();
     await disconnectDB();
@@ -13,4 +13,4 @@ const create = async (req, res) => {
 }
 
 
-module.exports = create;
+module.exports = { create };

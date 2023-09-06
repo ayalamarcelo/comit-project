@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const winnerSchema = new Schema({
-  time: Number,
-  moves: Number,
-  name: String,
+  user: String,
+  time: String,
+  moves: Number
 });
 
 const winnerUser = model("winnerUser", winnerSchema);
 
-module.exports = { winnerUser };
+module.exports = winnerUser;

@@ -2,11 +2,11 @@
 GET localhost:8000/
 
 ###
-POST localhost:8000/api/winner
+POST http://localhost:8000/api/winner
 content-type: application/json
 
 {
-    "time": "",
-    "moves": "",
-    "name": ""
+    "time": "00:34",
+    "moves": 22,
+    "user": "Marcelo"
 }
