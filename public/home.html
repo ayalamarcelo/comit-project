@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="title">
+            <h1>Pokeflip</h1>
+        </div>
+        <img src="../src/background.webp" alt="background">
+        <div class="btn">
+            <button type="submit" class="start" onclick="go()">Start</button>
+        </div>
+    </div>
+
+    <audio id="sonido" src="../src/audio.m4a" autoplay="loop" volume="0.5"></audio>
+
+    <script>
+        const go = () => {
+            window.location.href = "./index.html";
+        }
+    </script>
+    
+</body>
+
+</html>

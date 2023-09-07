@@ -21,8 +21,10 @@ app.get('/pokeAPI', (req, res) => {
   res.json(pokemonArray)
 });
 
+
 app.get('/', navController.goIndex);
 app.post('/api/winner', winController.create);
+app.get('/home', navController.goHome);
 
 // PORT 8000
 app.listen(PORT, () => {

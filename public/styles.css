@@ -27,14 +27,6 @@ body {
   padding: 40px 60px;
 }
 
-h2 {
-  font-size: 1.4em;
-  color: #6563ff;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-}
-
 .reset {
   display: flex;
   padding: 15px 20px;
