@@ -5,9 +5,10 @@ function goHome(req, res){
     res.sendFile(filePath);
 }
 
-function goIndex (req, res) {
+function goIndex(req, res) {
     const filePath = path.join(__dirname, '../../public/index.html')
-    res.send(filePath)
+    res.sendFile(filePath);
 }
+
 
 module.exports = { goHome, goIndex };

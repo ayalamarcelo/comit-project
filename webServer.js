@@ -11,6 +11,8 @@ const winController = require('./server/controllers/winController');
 
 // Middleware
 app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, './public/home.html')));
+
 app.use(cors());
 app.use(express.json());
 
@@ -21,10 +23,10 @@ app.get('/pokeAPI', (req, res) => {
   res.json(pokemonArray)
 });
 
-
+app.get('/public/home', navController.goHome);
 app.get('/', navController.goIndex);
 app.post('/api/winner', winController.create);
-app.get('/home', navController.goHome);
+
 
 // PORT 8000
 app.listen(PORT, () => {
