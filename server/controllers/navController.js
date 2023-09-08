@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 function goHome(req, res){
     const filePath = path.join(__dirname, '../../public/home.html')
