@@ -15,9 +15,9 @@ npm init
 ```bash
 $ git clone https://github.com/ayalamarceloruben/comit-project.git
 $ npm install
-$ npm run dev
-$ cd ../comit-project/public/index.html
-$ mongodb+srv://marcelorubenayala:adminpassword@cluster0.fuv8uu5.mongodb.net/
+$ npm run start
+$ Servidor corriendo en http://localhost:8000(follow-the-link)
+$ mongodb+srv://marcelorubenayala:(here-the-password)@cluster0.fuv8uu5.mongodb.net/pokeDB
 ```
 
 ### Contributing
