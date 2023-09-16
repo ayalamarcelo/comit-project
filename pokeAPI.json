@@ -61,5 +61,26 @@
     "sprites": {
       "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
     }
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+    }
   }
 ]

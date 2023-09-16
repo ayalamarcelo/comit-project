@@ -1,15 +1,15 @@
 require('dotenv').config();
-const express = require('express')
-const path = require('path')
+const express = require('express');
+const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT ?? 8000;
 
 const navController = require('./server/controllers/navController');
 const winController = require('./server/controllers/winController');
 
-// Middleware
+
 app.use(express.static(path.join(__dirname, './public')));
 app.use(express.static(path.join(__dirname, './public/src')));
 
@@ -24,11 +24,10 @@ app.get('/pokeAPI', (req, res) => {
 });
 
 app.get('/', navController.goHome);
-app.get('/', navController.goIndex);
+app.get('/index', navController.goIndex);
 app.post('/api/winner', winController.create);
 
 
-// PORT 8000
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`)
+  console.log(`Listening on http://localhost:${PORT}`);
 });
