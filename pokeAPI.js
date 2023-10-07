@@ -1,0 +1,116 @@
+const pokeAPI = [
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+    }
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+    }
+  },
+  {
+    "id": 59,
+    "name": "Arcanine",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
+    }
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+    }
+  },
+  {
+    "id": 110,
+    "name": "Weezing",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
+    }
+  }
+]
+
+window.pokeAPI = pokeAPI;
