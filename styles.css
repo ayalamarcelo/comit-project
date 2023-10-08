@@ -32,7 +32,7 @@ body {
   display: flex;
   padding: 15px 20px;
   color: #fff;
-  background: #6563ff;
+  background: #2a9d8f;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   border-radius: 10px;
   border: none;
@@ -46,7 +46,7 @@ body {
 
 .reset:hover {
   background: #fff;
-  color: #6563ff;
+  color: #2a9d8f;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
@@ -63,7 +63,7 @@ body {
 
 .generators {
   display: flex;
-  color: #6563ff;
+  color: #2a9d8f;
   justify-content: space-between;
   align-items: center;
   gap: 14em;
