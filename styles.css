@@ -12,8 +12,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(./img/picture.png);
+  background: url(./assets/background.webp);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -32,8 +33,8 @@ body {
   display: flex;
   padding: 15px 20px;
   color: #fff;
-  background: #2a9d8f;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  background: #464973;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: none;
   font-size: 1.0em;
@@ -46,9 +47,9 @@ body {
 
 .reset:hover {
   background: #fff;
-  color: #2a9d8f;
+  color: #464973;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .game {
@@ -63,7 +64,7 @@ body {
 
 .generators {
   display: flex;
-  color: #2a9d8f;
+  color: #464973;
   justify-content: space-between;
   align-items: center;
   gap: 14em;
@@ -80,7 +81,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #fff;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   font-size: 3em;
   transition: 0.25s;
@@ -97,20 +98,45 @@ body {
   position: absolute;
   inset: 0;
   background: #fff;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
 }
 
-@media (width < 700px) {
-  body {
-    max-width: 700px;
-    margin: 0 auto;
+@media (width < 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 430px;
+    height: 500px;
   }
 
-  .container {
-    background: transparent;
+  .item {
+    max-width: 80px;
+    max-height: 75px;
+  }
+
+  .item img {
+    max-width: 75px;
+    height: auto;
+  }
+
+  .game {
+    max-width: 350px;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reset {
+    padding: 10px 12px;
+    font-size: 0.8em;;
+  }
+
+  .generators {
+    font-size: 0.9em;
+    gap: 9em;
   }
 }
